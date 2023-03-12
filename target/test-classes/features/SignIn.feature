@@ -6,21 +6,9 @@ Feature: Retail SignIn feature
 
   @signIn
   Scenario: Verify user can sign in into Retail Application
-    And User enter email 'phantom.capstone1@tekschool.us' and password 'Tek@12345'
+    And User enter email 'tayeb@gmail.com' and password 'Aman@12344'
     And User click on login button
     Then User should be logged in into Account
-
-  @tc1
-  Scenario Outline: Verify user can sign in into Retail Application
-    And User enter email '<email>' and password '<password>'
-    And User click on login button
-    Then User should be logged in into Account
-
-    Examples: 
-      | email                          | password  |
-      | tayeb@gmail.com                | Adib@2019 |
-      | phantom.capstone1@tekschool.us | Tek@12345 |
-      | phantom.capstone@tekschool.us  | Tek@12345 |
 
   @dryRun @smokeTest @Regression @registerAccount @tc1
   Scenario: Verify user can create an account into Retail Website

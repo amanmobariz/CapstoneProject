@@ -24,5 +24,32 @@ public class POMFactory extends BaseSetup {
 	public RetailAccountPage accountPage() {
 		return this.accountPage;
 	}
+
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

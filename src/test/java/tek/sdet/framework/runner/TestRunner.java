@@ -7,11 +7,11 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "@test6",
+		tags = "@updateAddress",
 		features = "classpath:features", // this is path to features folder
 		glue ="tek.sdet.framework",
 		dryRun = false,
-		plugin = {
+		plugin = { 
                 "pretty",
                 "html:target/htmlReports/cucumber-pretty.html",
                 "json:target/jsonReports/cucumber.json"
@@ -22,3 +22,4 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 public class TestRunner {
 
 }
+
