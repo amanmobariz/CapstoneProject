@@ -40,7 +40,7 @@ public class SignInSteps extends CommonUtility {
 	    logger.info("user clicked on Create New Account button");
 	    
 	}
-	@When("User fill the signUp information with below data")
+	@And("User fill the signUp information with below data")
 	public void userFillTheSignUpInformationWithBelowData(DataTable dataTable) {
 	List<Map<String, String>> data = dataTable.asMaps(String.class,String.class);
 	sendText(factory.signInPage().createNewAccountNameField,data.get(0).get("name"));
@@ -50,7 +50,7 @@ public class SignInSteps extends CommonUtility {
 	logger.info("user filled the signUp information form");
 	   
 	}
-	@When("User click on SignUp button")
+	@Then("User click on SignUp button")
 	public void userClickOnSignUpButton() {
 	    // Write code here that turns the phrase above into concrete actions
 	   click(factory.signInPage().signUpButton);

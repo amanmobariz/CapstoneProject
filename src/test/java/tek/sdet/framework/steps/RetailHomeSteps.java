@@ -16,6 +16,18 @@ package tek.sdet.framework.steps;
 
 		POMFactory factory = new POMFactory();
 		
+		@Then("below options are present in Shop by Department sidebar")
+		public void belowOptionsArePresentInShopByDepartmentSidebar(DataTable dataTable) {
+		    // Write code here that turns the phrase above into concrete actions
+		    // For automatic transformation, change DataTable to one of
+		    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+		    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+		    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+		    //
+		    // For other transformations you can register a DataTableType.
+		    throw new io.cucumber.java.PendingException();
+		}
+		
 		@When ("User click on All section")
 			public void userClickOnAllSection() {
 			click(factory.homePage().AllElements);
@@ -50,12 +62,12 @@ package tek.sdet.framework.steps;
 			}
 		}
 		
-		@When("User enter email {string} and password {string}")
-		public void userEnterEmailAndPassword(String emailValue, String passValue) {
-			sendText(factory.signInPage().emailField, emailValue);
-			sendText(factory.signInPage().passwordField, passValue);
-			logger.info("user entered email and password");
-		}
+		// @When("User enter email {string} and password {string}")
+		//public void userEnterEmailAndPassword(String emailValue, String passValue) {
+			//sendText(factory.signInPage().emailField, emailValue);
+			//sendText(factory.signInPage().passwordField, passValue);
+			//logger.info("user entered email and password");
+		//}
 
 		
 		@And("User change the category to 'Smart Home'")
@@ -74,7 +86,7 @@ package tek.sdet.framework.steps;
 		
 		@And("User click on Search icon")
 		public void userClickOnSearchIcon() {
-			click(factory.homePage().searchButton);
+			click(factory.homePage().searchBtn);
 			logger.info("User click on Search icon");
 		}
 		

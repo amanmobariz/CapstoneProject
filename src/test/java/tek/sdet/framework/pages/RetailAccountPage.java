@@ -44,7 +44,7 @@ public class RetailAccountPage extends BaseSetup{
 	@FindBy(xpath = "//div[contains(text(),'Password Updated Successfully')]")
 	public WebElement passupdateMessage;
 	
-	// ------------------------------------------------------------------
+	// add payment card------------------------------------------------------------------
 	
 	@FindBy(xpath = "//p[contains(text(),'Add a payment method')]")
 	public WebElement addPaymentLink;
@@ -105,7 +105,10 @@ public class RetailAccountPage extends BaseSetup{
 	@FindBy(xpath = "//p[contains(@class,'account__payment__sub-text')]")
 	public WebElement subtitleSection;
 	
-	@FindBy(xpath = "//button[contains(@class,'text-blue-800 cursor-pointer hover:underline')]")
+	// @FindBy(xpath = "//button[text()= 'remove']")
+	// public WebElement removeButton;
+	
+	@FindBy(xpath = "//button[contains(text(),'remove')]")
 	public WebElement removeButton;
 	
 	// Add address -------------------------------------------------------------------
@@ -178,4 +181,25 @@ public class RetailAccountPage extends BaseSetup{
 	
 	@FindBy(xpath = "//div[text()='Address Updated Successfully']")
 	public WebElement editAddressMessag;
+	
+	// Remove Address ---------------------------------------
+	
+	@FindBy(xpath = "//button[text()='Remove']")
+	public WebElement removeAddressBut; 
+	
 }   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

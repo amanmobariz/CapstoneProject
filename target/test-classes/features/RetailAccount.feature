@@ -71,57 +71,10 @@ Feature: Retail Account Page
     And User click update Your Address button
     Then a message should be displayed ‘Address Updated Successfully
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  @removeAdd
+  Scenario: Verify User can remove Address from Account
+    When User click on Account option
+    And User click on remove option of Address section
+    Then Address details should be removed
+
     

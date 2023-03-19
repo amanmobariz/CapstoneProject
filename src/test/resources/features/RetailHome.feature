@@ -1,6 +1,13 @@
 Feature: Retail Home Page
 
-  @test6
+	@sideBar
+  Scenario: Verify Shop by Department sidebar
+    Given User is on retail website
+    When User click on All section
+    Then below options are present in Shop by Department sidebar
+      | Electronics | Computers | Smart Home | Sports | Automative |
+
+  @sideBar2
   Scenario Outline: Verify department sidebar options
     When User click on All section
     And User on <department>
@@ -15,11 +22,11 @@ Feature: Retail Home Page
       | 'Sports'      | Athletic Clothing              | Exercise & Fitness       |
       | 'Automotive'  | Automative Parts & Accessories | MotorCycle & Powersports |
 
-	@item
+  @addItem2, @signIn
   Scenario: Verify User can add an item to cart
-  Given User is on retail website
+    Given User is on retail website
     When User click on Sign in option
-    And User enter email 'phantom.capstone1@tekschool.us' and password ''Tek@12345'
+    And User enter email 'tayeb@gmail.com' and password ''Aman@12344'
     And User click on login button
     And User should be logged in into Account
     And User change the category to 'Smart Home'
@@ -29,19 +36,3 @@ Feature: Retail Home Page
     And User select quantity ‘2’
     And User click add to Cart button
     Then the cart icon quantity should change to ‘2’
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    

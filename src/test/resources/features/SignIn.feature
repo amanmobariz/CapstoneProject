@@ -19,7 +19,4 @@ Feature: Retail SignIn feature
     And User click on SignUp button
     Then User should be logged into account page
 
-    
-    
-    
-    
+  

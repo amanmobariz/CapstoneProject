@@ -20,18 +20,6 @@ public class RetailHomePage extends BaseSetup {
 	// @FindBy(locatorType = "locator Value")
 	// public WebElement nameOfElement
 	
-	@FindBy(linkText = "TEKSCHOOL") // this is same as driver.findElement() 
-	public WebElement tekschoolLogo;
-	
-	@FindBy(id = "searchInput")
-	public WebElement searchBarInput;
-	
-	@FindBy(id = "searchBtn")
-	public WebElement searchButton;
-	
-	@FindBy(xpath ="//img[contains(@alt,'Pokemon')]")
-	public WebElement pokemonImage;
-	
 	@FindBy(id ="signinLink")
 	public WebElement signInOption;
 	
