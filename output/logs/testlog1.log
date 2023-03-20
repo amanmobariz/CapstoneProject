@@ -1771,3 +1771,143 @@
 2023-03-19 12:52:03,649 [main] INFO logger_File - user clicked on Sign in Option
 2023-03-19 12:53:24,212 [main] INFO logger_File - User is on retail website
 2023-03-19 12:53:24,639 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 12:04:06,545 [main] INFO logger_File - User is on retail website
+2023-03-20 12:04:07,138 [main] INFO logger_File - User click on All section link
+2023-03-20 12:04:07,193 [main] INFO logger_File - all 5 shop Department sidebar are present
+2023-03-20 12:06:24,638 [main] INFO logger_File - User is on retail website
+2023-03-20 12:06:25,135 [main] INFO logger_File - User click on All section link
+2023-03-20 12:06:25,248 [main] INFO logger_File - all 5 shop Department sidebar are present
+2023-03-20 12:07:11,240 [main] INFO logger_File - User click on All section link
+2023-03-20 12:07:20,417 [main] INFO logger_File - User click on All section link
+2023-03-20 12:07:31,240 [main] INFO logger_File - User click on All section link
+2023-03-20 12:07:40,145 [main] INFO logger_File - User click on All section link
+2023-03-20 12:07:49,524 [main] INFO logger_File - User click on All section link
+2023-03-20 12:08:47,726 [main] INFO logger_File - User is on retail website
+2023-03-20 12:08:48,308 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 12:10:02,065 [main] INFO logger_File - User is on retail website
+2023-03-20 12:10:02,479 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 12:13:03,300 [main] INFO logger_File - User is on retail website
+2023-03-20 12:13:03,966 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 12:14:45,251 [main] INFO logger_File - User is on retail website
+2023-03-20 12:14:45,756 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 12:16:02,097 [main] INFO logger_File - User is on retail website
+2023-03-20 12:16:02,687 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 12:21:14,292 [main] INFO logger_File - User is on retail website
+2023-03-20 12:21:14,710 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 12:24:12,642 [main] INFO logger_File - User is on retail website
+2023-03-20 12:24:13,031 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 12:24:13,469 [main] INFO logger_File - user entered email and password
+2023-03-20 12:24:13,806 [main] INFO logger_File - user clicked on login button
+2023-03-20 12:24:14,071 [main] INFO logger_File - user is logged in into Account
+2023-03-20 12:24:57,845 [main] INFO logger_File - User is on retail website
+2023-03-20 12:24:58,505 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 12:24:58,839 [main] INFO logger_File - user entered email and password
+2023-03-20 12:24:59,205 [main] INFO logger_File - user clicked on login button
+2023-03-20 12:24:59,615 [main] INFO logger_File - user is logged in into Account
+2023-03-20 13:09:47,917 [main] INFO logger_File - User is on retail website
+2023-03-20 13:09:48,431 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 13:09:48,766 [main] INFO logger_File - user entered email and password
+2023-03-20 13:09:49,092 [main] INFO logger_File - user clicked on login button
+2023-03-20 13:09:49,395 [main] INFO logger_File - user is logged in into Account
+2023-03-20 13:09:50,016 [main] INFO logger_File - User change the category to 'Smart Home'
+2023-03-20 13:11:00,814 [main] INFO logger_File - User is on retail website
+2023-03-20 13:11:01,396 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 13:11:01,751 [main] INFO logger_File - user entered email and password
+2023-03-20 13:11:02,052 [main] INFO logger_File - user clicked on login button
+2023-03-20 13:11:02,277 [main] INFO logger_File - user is logged in into Account
+2023-03-20 13:11:02,872 [main] INFO logger_File - User change the category to 'Smart Home'
+2023-03-20 13:11:03,246 [main] INFO logger_File - User search for an item 'kasa outdoor smart plug
+2023-03-20 13:11:03,550 [main] INFO logger_File - User click on Search icon
+2023-03-20 13:11:03,833 [main] INFO logger_File - User click on item
+2023-03-20 13:12:14,627 [main] INFO logger_File - User is on retail website
+2023-03-20 13:12:15,188 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 13:12:15,556 [main] INFO logger_File - user entered email and password
+2023-03-20 13:12:15,866 [main] INFO logger_File - user clicked on login button
+2023-03-20 13:12:16,087 [main] INFO logger_File - user is logged in into Account
+2023-03-20 13:12:16,670 [main] INFO logger_File - User change the category to 'Smart Home'
+2023-03-20 13:12:17,030 [main] INFO logger_File - User search for an item 'kasa outdoor smart plug
+2023-03-20 13:12:17,330 [main] INFO logger_File - User click on Search icon
+2023-03-20 13:12:17,661 [main] INFO logger_File - User click on item
+2023-03-20 13:12:17,964 [main] INFO logger_File - User selected quantity ‘2’
+2023-03-20 13:12:18,439 [main] INFO logger_File - User click add to Cart button
+2023-03-20 13:12:18,508 [main] INFO logger_File - cart icon quantity changed to '2'
+2023-03-20 13:13:14,791 [main] INFO logger_File - User is on retail website
+2023-03-20 13:13:15,399 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 13:13:15,745 [main] INFO logger_File - user entered email and password
+2023-03-20 13:13:16,138 [main] INFO logger_File - user clicked on login button
+2023-03-20 13:13:16,422 [main] INFO logger_File - user is logged in into Account
+2023-03-20 13:13:17,020 [main] INFO logger_File - User change the category to 'Smart Home'
+2023-03-20 13:13:17,472 [main] INFO logger_File - User search for an item 'kasa outdoor smart plug
+2023-03-20 13:13:17,758 [main] INFO logger_File - User click on Search icon
+2023-03-20 13:13:18,327 [main] INFO logger_File - User click on item
+2023-03-20 13:13:18,633 [main] INFO logger_File - User selected quantity ‘2’
+2023-03-20 13:13:18,889 [main] INFO logger_File - User click add to Cart button
+2023-03-20 13:13:18,918 [main] INFO logger_File - cart icon quantity changed to '2'
+2023-03-20 13:14:02,325 [main] INFO logger_File - User is on retail website
+2023-03-20 13:14:02,779 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 13:14:03,165 [main] INFO logger_File - user entered email and password
+2023-03-20 13:14:03,496 [main] INFO logger_File - user clicked on login button
+2023-03-20 13:14:03,879 [main] INFO logger_File - user is logged in into Account
+2023-03-20 13:14:04,548 [main] INFO logger_File - User change the category to 'Smart Home'
+2023-03-20 13:14:04,958 [main] INFO logger_File - User search for an item 'kasa outdoor smart plug
+2023-03-20 13:14:05,268 [main] INFO logger_File - User click on Search icon
+2023-03-20 13:14:05,581 [main] INFO logger_File - User click on item
+2023-03-20 13:14:05,894 [main] INFO logger_File - User selected quantity ‘2’
+2023-03-20 13:14:06,390 [main] INFO logger_File - User click add to Cart button
+2023-03-20 13:14:06,421 [main] INFO logger_File - cart icon quantity changed to '2'
+2023-03-20 14:13:24,705 [main] INFO logger_File - User is on retail website
+2023-03-20 14:13:25,364 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 14:13:25,629 [main] INFO logger_File - user entered email and password
+2023-03-20 14:13:25,960 [main] INFO logger_File - user clicked on login button
+2023-03-20 14:13:26,175 [main] INFO logger_File - user is logged in into Account
+2023-03-20 14:13:26,880 [main] INFO logger_File - User change the category to 'Smart Home'
+2023-03-20 14:13:27,304 [main] INFO logger_File - User search for an item 'kasa outdoor smart plug
+2023-03-20 14:13:27,629 [main] INFO logger_File - User click on Search icon
+2023-03-20 14:13:28,141 [main] INFO logger_File - User click on item
+2023-03-20 14:13:28,498 [main] INFO logger_File - User selected quantity ‘2’
+2023-03-20 14:13:28,757 [main] INFO logger_File - User click add to Cart button
+2023-03-20 14:13:28,797 [main] INFO logger_File - cart icon quantity changed to '2'
+2023-03-20 14:13:29,109 [main] INFO logger_File - User clicked on cart option
+2023-03-20 14:15:22,632 [main] INFO logger_File - User is on retail website
+2023-03-20 14:15:23,374 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 14:15:23,650 [main] INFO logger_File - user entered email and password
+2023-03-20 14:15:23,950 [main] INFO logger_File - user clicked on login button
+2023-03-20 14:15:24,153 [main] INFO logger_File - user is logged in into Account
+2023-03-20 14:15:24,734 [main] INFO logger_File - User change the category to 'Smart Home'
+2023-03-20 14:15:25,129 [main] INFO logger_File - User search for an item 'kasa outdoor smart plug
+2023-03-20 14:15:25,398 [main] INFO logger_File - User click on Search icon
+2023-03-20 14:15:25,739 [main] INFO logger_File - User click on item
+2023-03-20 14:15:26,215 [main] INFO logger_File - User selected quantity ‘2’
+2023-03-20 14:15:26,551 [main] INFO logger_File - User click add to Cart button
+2023-03-20 14:15:26,587 [main] INFO logger_File - cart icon quantity changed to '2'
+2023-03-20 14:15:26,886 [main] INFO logger_File - User clicked on cart option
+2023-03-20 14:17:35,257 [main] INFO logger_File - User is on retail website
+2023-03-20 14:17:35,863 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 14:17:36,202 [main] INFO logger_File - user entered email and password
+2023-03-20 14:17:36,525 [main] INFO logger_File - user clicked on login button
+2023-03-20 14:17:36,753 [main] INFO logger_File - user is logged in into Account
+2023-03-20 14:17:37,392 [main] INFO logger_File - User change the category to 'Smart Home'
+2023-03-20 14:17:37,814 [main] INFO logger_File - User search for an item 'kasa outdoor smart plug
+2023-03-20 14:17:38,118 [main] INFO logger_File - User click on Search icon
+2023-03-20 14:17:38,606 [main] INFO logger_File - User click on item
+2023-03-20 14:17:38,930 [main] INFO logger_File - User selected quantity ‘2’
+2023-03-20 14:17:39,232 [main] INFO logger_File - User click add to Cart button
+2023-03-20 14:17:39,264 [main] INFO logger_File - cart icon quantity changed to '2'
+2023-03-20 14:17:39,574 [main] INFO logger_File - User clicked on cart option
+2023-03-20 14:17:39,880 [main] INFO logger_File - user clicked on Proceed to Checkout
+2023-03-20 14:20:32,307 [main] INFO logger_File - User is on retail website
+2023-03-20 14:20:32,844 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-20 14:20:33,218 [main] INFO logger_File - user entered email and password
+2023-03-20 14:20:33,526 [main] INFO logger_File - user clicked on login button
+2023-03-20 14:20:33,808 [main] INFO logger_File - user is logged in into Account
+2023-03-20 14:20:34,427 [main] INFO logger_File - User change the category to 'Smart Home'
+2023-03-20 14:20:34,781 [main] INFO logger_File - User search for an item 'kasa outdoor smart plug
+2023-03-20 14:20:35,053 [main] INFO logger_File - User click on Search icon
+2023-03-20 14:20:35,363 [main] INFO logger_File - User click on item
+2023-03-20 14:20:35,698 [main] INFO logger_File - User selected quantity ‘2’
+2023-03-20 14:20:36,220 [main] INFO logger_File - User click add to Cart button
+2023-03-20 14:20:36,253 [main] INFO logger_File - cart icon quantity changed to '2'
+2023-03-20 14:20:36,554 [main] INFO logger_File - User clicked on cart option
+2023-03-20 14:20:36,844 [main] INFO logger_File - user clicked on Proceed to Checkout
+2023-03-20 14:20:37,102 [main] INFO logger_File - user clicked on Place Order link
+2023-03-20 14:20:37,354 [main] INFO logger_File - a message should be displayed ‘Order Placed, Thanks’

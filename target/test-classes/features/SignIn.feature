@@ -6,7 +6,7 @@ Feature: Retail SignIn feature
 
   @signIn
   Scenario: Verify user can sign in into Retail Application
-    And User enter email 'tayeb@gmail.com' and password 'Aman@12344'
+    And User enter email 'aisha13@gmail.com' and password 'Aman@12345'
     And User click on login button
     Then User should be logged in into Account
 
