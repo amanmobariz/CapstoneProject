@@ -70,7 +70,7 @@ public class RetailAccountPage extends BaseSetup{
 	@FindBy(xpath = "//div[contains(text(),'Payment Method added sucessfully')]")
 	public WebElement paymentUpdateMessage;
 	
-	// ------------------------------------------------------------------
+	// edit card ------------------------------------------------------------------
 	
 	@FindBy(xpath = "//p[contains(@class, 'account')]")
 	public WebElement subtitleLink;
@@ -143,7 +143,7 @@ public class RetailAccountPage extends BaseSetup{
 	@FindBy(xpath = "//button[@id='addressBtn']")
 	public WebElement addAddressBut; 
 	
-	//@FindBy(xpath = "//div[contains(text(),'Address Added Successfully)]")
+	
 	@FindBy(xpath = "//div[text()='Address Added Successfully']")
 	public WebElement addAddressMessag;   
 	

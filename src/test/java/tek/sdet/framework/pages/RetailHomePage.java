@@ -76,15 +76,35 @@ public class RetailHomePage extends BaseSetup {
 	@FindBy(css = "#proceedBtn")
 	public WebElement proceedButton;
 	
-	// @FindBy(xpath ="//button[@id='addAddressBtn']")
-	// public WebElement addNewAddress;
+	@FindBy(xpath ="//button[@id='addAddressBtn']")
+	public WebElement addNewAddress;
 	
-	@FindBy(xpath ="//div[contains(@class, 'checkout__address-item-selected checkout__address-item')]")
-	public WebElement addExistingAddress;
-	
-	@FindBy(xpath ="//div[contains(@class,'checkout__payment-item-selected checkout__payment-item')]")
-	public WebElement useExistingPayment;
-	
+	@FindBy(id = "countryDropdown")
+	public WebElement countryDropDownBut;
+		
+	@FindBy(xpath = "//input[@id='fullNameInput']")
+	public WebElement fullNameField;
+		
+	@FindBy(id = "phoneNumberInput")
+	public WebElement phoneNumInput;
+		
+	@FindBy(xpath = "//input[@id='streetInput']")
+	public WebElement streetInput;
+		
+	@FindBy(xpath = "//input[@id='apartmentInput']")
+	public WebElement aptNumInput;
+		
+	@FindBy(xpath = "//input[@id='cityInput']")
+	public WebElement cityInput;
+		
+	@FindBy(xpath = "//select[contains(@name, 'state')]")
+	public WebElement stateInput;
+		
+	@FindBy(xpath = "//input[@id='zipCodeInput']")
+	public WebElement zipInput;  
+		
+	@FindBy(xpath = "//button[@id='addressBtn']")
+	public WebElement addAddressBut;
 	
 	@FindBy(xpath ="//button[@id='placeOrderBtn']") 
 	public WebElement placeOrderButton;
@@ -92,9 +112,36 @@ public class RetailHomePage extends BaseSetup {
 	@FindBy(xpath ="//p[contains(text(),'Order Placed, Thanks')]")
 	public WebElement orderMessage;
 	
-	// @FindBy(xpath ="//div[contains(text(),'Order Placed Successfully')]")
-	// public WebElement orderSuccessMessage;
+	@FindBy(css = "#addPaymentBtn")
+	public WebElement addPaymentLink;
+	
+	@FindBy(xpath = "//input[@id='cardNumberInput']")
+	public WebElement cardNumber;
+	
+	@FindBy(xpath = "//input[@id='nameOnCardInput']")
+	public WebElement cardName;
+	
+	@FindBy(xpath = "//select[@id='expirationMonthInput']")
+	public WebElement expirationMonth;
+	
+	@FindBy(xpath = "//select[@id='expirationYearInput']")
+	public WebElement expirationYear;
+	
+	@FindBy(css = "#securityCodeInput")
+	public WebElement secuityCode;
+	
+	@FindBy(css = "#paymentSubmitBtn")
+	public WebElement addCardButton;
+	
+	@FindBy(css = "#placeOrderBtn")
+	public WebElement placeOrderButt;
+	
+	// order without address and card payment ------------------------------
+	
+	@FindBy(xpath = "//img[contains(@alt, 'Apex Legends - 1,000 Apex Coins')]")
+	public WebElement clickAtImg;
 }
+
 
 
 

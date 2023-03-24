@@ -76,7 +76,7 @@ public class RetailAccountSteps extends CommonUtility {
     	logger.info("an updated message appeared");
     }
     
- // 3: ------------------------------------------------------------------
+ // 3: add payment ------------------------------------------------------------------
     
     @When("User click on Add a payment method link")
     public void userClickOnAddAPaymentMethodLink() {
@@ -104,7 +104,7 @@ public class RetailAccountSteps extends CommonUtility {
     	logger.info("an updated message displayed");
     }
     
-    // 4: ------------------------------------------------------------------
+    // 4: edit card payment ------------------------------------------------------------------
     
     @And("User click on master card link")
     public void userClickOnMasterCardLink() {

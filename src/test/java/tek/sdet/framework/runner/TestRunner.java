@@ -7,10 +7,10 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "@placeOrder1",
+		tags = "@orderReview",
 		features = "classpath:features", // this is path to features folder
 		glue ="tek.sdet.framework",
-		dryRun = false,
+		dryRun = true,
 		plugin = { 
                 "pretty",
                 "html:target/htmlReports/cucumber-pretty.html",

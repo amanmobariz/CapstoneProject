@@ -1,8 +1,9 @@
 package tek.sdet.framework.steps;
 
 	import java.util.List;
+import java.util.Map;
 
-	import org.junit.Assert;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -57,14 +58,7 @@ import org.openqa.selenium.WebElement;
 			}
 		}
 		
-		// @When("User enter email {string} and password {string}")
-		//public void userEnterEmailAndPassword(String emailValue, String passValue) {
-			//sendText(factory.signInPage().emailField, emailValue);
-			//sendText(factory.signInPage().passwordField, passValue);
-			//logger.info("user entered email and password");
-		//}
-
-		
+	
 		@And("User change the category to {string}")
 		public void userChangeTheCategory(String catagory) {
 			click(factory.homePage().dropDownList);
@@ -130,24 +124,60 @@ import org.openqa.selenium.WebElement;
 		}
 	@And("User click Add a new address link for shipping address")
 		public void userClickAddANewAddressLinkForShippingAddress() {
-		    
+		click(factory.homePage().addNewAddress);
+		logger.info("user clicked Add a new address link");
 			
 		}
-	@And("User fill new address form with below information")
-		public void userFillNewAddressFormWithBelowInformation(DataTable dataTable) {
-		    
+	@And("User fill new address information")
+		public void userFillNewAddressInformation(DataTable dataTable) {
+		List<Map<String, String>> shippingAddress = dataTable.asMaps(String.class, String.class);
+    	selectByVisibleText(factory.accountPage().countryDropDownBut, shippingAddress.get(0).get("country"));
+    	sendText(factory.accountPage().fullNameField, shippingAddress.get(0).get("fullName"));
+    	sendText(factory.accountPage().phoneNumInput, shippingAddress.get(0).get("phoneNumber"));
+    	sendText(factory.accountPage().streetInput, shippingAddress.get(0).get("streetAddress"));
+    	sendText(factory.accountPage().aptNumInput, shippingAddress.get(0).get("apt"));
+    	sendText(factory.accountPage().cityInput, shippingAddress.get(0).get("city"));
+    	selectByVisibleText(factory.accountPage().stateInput, shippingAddress.get(0).get("state"));
+    	sendText(factory.accountPage().zipInput, shippingAddress.get(0).get("zipCode"));
+    	logger.info("user added new shipping address information");
 			
 		}
+	
+	@And("User click Add Address button")
+	public void userClickAddAddressButton() {
+		click(factory.homePage().addAddressBut);
+		logger.info("user clicked at the Add Address button");
+		
+	}
 	
 	@And("User click Add a credit card or Debit Card for Payment method")
 		public void userClickAddACreditCardOrDebitCardForPaymentMethod() {
-		    
+		click(factory.homePage().addPaymentLink);
+		logger.info("user clicked at the Add a credit card or Debit Card for Payment method");
 			
 		}
 	
+	@And ("User fill bellow Debit or credit card information")
+    public void userFillBellowDebitOrCreditCardInformation(DataTable dataTable) {
+    	List<Map<String, String>> addCard = dataTable.asMaps(String.class, String.class);
+    	sendText(factory.accountPage().cardNumber, addCard.get(0).get("cardNumber"));
+    	sendText(factory.accountPage().cardName, addCard.get(0).get("nameOnCard"));
+    	selectByVisibleText(factory.accountPage().expirationMonth, addCard.get(0).get("expirationMonth"));
+    	selectByVisibleText(factory.accountPage().expirationYear, addCard.get(0).get("expirationYear"));
+    	sendText(factory.accountPage().secuityCode, addCard.get(0).get("securityCode"));
+    	logger.info("user filled Debit or credit card information for order");
+	}
+	
+	@And("User click on Add card button")
+	public void userClickOnPlaceYourOrde() {
+		click(factory.homePage().addCardButton);
+		logger.info("user clicked at the Add card button");
+		
+	}
+	
 		@And("User click on Place Your Order")
 		public void userClickOnPlaceYourOrder() {
-			click(factory.homePage().placeOrderButton);
+			click(factory.homePage().placeOrderButt);
 			logger.info("user clicked on Place Order link");
 			
 		}
@@ -157,5 +187,22 @@ import org.openqa.selenium.WebElement;
 	    	logger.info("a message should be displayed ‘Order Placed, Thanks’");
 			
 		}
-
+		
+		// order without address and card payment ---------------------------------
+		
+		@And("User click on the item")
+		public void userClickOnTheItem() {
+			click(factory.homePage().clickAtImg);
+			logger.info("user clicked on the item image");
+		}
+		
+		@Then("the cart icon quantity should be changed to {string}")
+		public void theCartIconQuantityShouldBeChanged(String qty) {
+			String actualQuantity = qty;
+			String expectedQuantity = "5";
+			Assert.assertEquals(actualQuantity, expectedQuantity);
+		    Assert.assertTrue(isElementDisplayed(factory.homePage().cartQuantity));
+		    logger.info("cart icon quantity changed to '5'");
+		    
+		}
 	}
