@@ -17,6 +17,8 @@ import tek.sdet.framework.utilities.CommonUtility;
 public class RetailAccountSteps extends CommonUtility {
 	POMFactory factory = new POMFactory();
 	
+	// 1 - Update Profile ------------
+	
 	@When ("User click on Account option")
 	public void userClickOnAccountOption() {
 		click(factory.homePage().accountOption);
@@ -25,14 +27,14 @@ public class RetailAccountSteps extends CommonUtility {
 
     @And ("User update Name {string} and Phone {string}")
     public void userUpdateNameAndPhone(String nameValue, String phoneValue) {
-    	// clearTextUsingSendKeys(factory.accountPage().nameInput);
-    	// clearTextUsingSendKeys(factory.accountPage().phoneInput);
-    	// clearText(factory.accountPage().nameInput);
-    	// clearText(factory.accountPage().phoneInput);
+    	clearTextUsingSendKeys(factory.accountPage().nameInput);
+    	clearTextUsingSendKeys(factory.accountPage().phoneInput);
+    	clearText(factory.accountPage().nameInput);
+    	clearText(factory.accountPage().phoneInput);
     	clearTextUsingJSExecutor(factory.accountPage().nameInput);
     	clearTextUsingJSExecutor(factory.accountPage().phoneInput);
     	sendText(factory.accountPage().nameInput, nameValue);
-    	// sendText(factory.accountPage().phoneInput, phoneValue);
+    	sendText(factory.accountPage().phoneInput, phoneValue);
     	logger.info("Updating Name and Phone Number");
     } 
     
@@ -53,7 +55,7 @@ public class RetailAccountSteps extends CommonUtility {
     	
     }
     
- // 2:  ------------------------------------------------------------------
+ // 2: Update Password ------------------------------------------------------------------
     
     @And("User enter below information")
     public void userEnterBelowInformation(DataTable dataTable) {
@@ -123,18 +125,18 @@ public class RetailAccountSteps extends CommonUtility {
     	clearText(factory.accountPage().cardNum);
     	clearTextUsingJSExecutor(factory.accountPage().cardNam);
     	clearTextUsingJSExecutor(factory.accountPage().secuityCodeNo);
-    	// clearText(factory.accountPage().cardNam); // i have called all these below method, but it does not clear in my Mac
-    	// clearText(factory.accountPage().secuityCodeNo);
-    	// clearTextUsingSendKeys(factory.accountPage().cardNum);
-    	// clearTextUsingSendKeys(factory.accountPage().cardNam);
-    	// clearTextUsingSendKeys(factory.accountPage().secuityCodeNo);
-    	// clearTextUsingJSExecutor(factory.accountPage().nameInput);
-    	// clearTextUsingJSExecutor(factory.accountPage().phoneInput);
+    	clearText(factory.accountPage().cardNam); // i have called all these below method, but it does not clear in my Mac
+    	clearText(factory.accountPage().secuityCodeNo);
+    	clearTextUsingSendKeys(factory.accountPage().cardNum);
+    	clearTextUsingSendKeys(factory.accountPage().cardNam);
+    	clearTextUsingSendKeys(factory.accountPage().secuityCodeNo);
+    	clearTextUsingJSExecutor(factory.accountPage().nameInput);
+    	clearTextUsingJSExecutor(factory.accountPage().phoneInput);
     	sendText(factory.accountPage().cardNum, edit.get(0).get("cardNumber"));
-    	sendText(factory.accountPage().cardNam, edit.get(0).get("nameOnCard"));
+    	// sendText(factory.accountPage().cardNam, edit.get(0).get("nameOnCard"));
     	selectByVisibleText(factory.accountPage().expirationMon, edit.get(0).get("expirationMonth"));
     	selectByVisibleText(factory.accountPage().expirationYe, edit.get(0).get("expirationYear"));
-    	sendText(factory.accountPage().secuityCodeNo, edit.get(0).get("securityCode"));
+    	// sendText(factory.accountPage().secuityCodeNo, edit.get(0).get("securityCode"));
     	logger.info("user edited payment method displayed");
     	
     }
@@ -145,10 +147,15 @@ public class RetailAccountSteps extends CommonUtility {
 		logger.info("user clicked on card button");
     	
     }
-    @Then("a message should be displayed ‘Payment Method updated Successfully")
-    public void aMessageShouldBeDisplayedPaymentMethodUpdatedSuccessfully() {
-    	waitTillPresence(factory.accountPage().paymentMethodMessage);
-    	logger.info("a payement method updated message displayed");
+    
+ 	
+    @Then("a message should be displayed {string}")
+    public void aMessageShouldBeDisplayedPaymentMethodUpdatedSuccessfully(String paymentMethodMessage) {
+    	String actualMessage = paymentMethodMessage;
+    	String expectedMessage = "Payment Method updated Successfully";
+    	Assert.assertEquals(actualMessage, expectedMessage);
+    	// Assert.assertTrue(isElementDisplayed(factory.accountPage().paymentMethodMessage));
+        logger.info("this message should be displayed ‘Payment Method updated Successfully'");
    
     }
     
@@ -201,13 +208,17 @@ public class RetailAccountSteps extends CommonUtility {
 		logger.info("User clicked on add address link");
     	
     }
-    @Then("a message should be displayed ‘Address Added Successfully")
-    public void aMessageShouldBeDisplayedAddressAddedSuccessfully() {
+    @Then("a message should be displayed like {string}")
+    public void aMessageShouldBeDisplayedAddressAddedSuccessfully(String addAddressMessag) {
     	waitTillPresence(factory.accountPage().addAddressMessag);
-    	logger.info("an added address message displayed");
+        String actualMessage = addAddressMessag;
+        String expectedMessage = "Address Added Successfully";
+        Assert.assertEquals(actualMessage, expectedMessage);
+        Assert.assertTrue(isElementDisplayed(factory.accountPage().addAddressMessag));
+        logger.info("an added address message displayed");
     	
             }
-    // -------------------------------------------------
+    // Edit Address -------------------------------------------------
     
     @And("User click on edit address option")
     public void userClickOnEditAddressOption() {
@@ -220,27 +231,26 @@ public class RetailAccountSteps extends CommonUtility {
     public void userUpdateNewAddressForm(DataTable dataTable) {
     	List<Map<String, String>> editAddress = dataTable.asMaps(String.class, String.class);
     	selectByVisibleText(factory.accountPage().editcountryDropDownBut, editAddress.get(0).get("country"));
-    	clearTextUsingSendKeys(factory.accountPage().editfullNameField);
-    	clearTextUsingSendKeys(factory.accountPage().editphoneNumInput);
+    	// clearTextUsingSendKeys(factory.accountPage().editfullNameField);
+    	// clearTextUsingSendKeys(factory.accountPage().editphoneNumInput);
     	clearTextUsingSendKeys(factory.accountPage().editstreetInput);
     	clearTextUsingSendKeys(factory.accountPage().editaptNumInput);
     	clearTextUsingSendKeys(factory.accountPage().editcityInput);
-    	clearTextUsingSendKeys(factory.accountPage().editzipInput);
+    	// clearTextUsingSendKeys(factory.accountPage().editzipInput);
     	
     	clearText(factory.accountPage().editfullNameField);
-    	clearTextUsingJSExecutor(factory.accountPage().editphoneNumInput);
-    	clearTextUsingJSExecutor(factory.accountPage().editstreetInput);
     	clearText(factory.accountPage().editaptNumInput);
+    	clearText(factory.accountPage().cardNam); // I have called all these below method, but IT does not clear the existing 
+    	clearTextUsingJSExecutor(factory.accountPage().editphoneNumInput); // values such as phone number and zipcode in my Mac
+    	clearTextUsingJSExecutor(factory.accountPage().editstreetInput);
     	clearTextUsingJSExecutor(factory.accountPage().editcityInput);
     	clearTextUsingJSExecutor(factory.accountPage().editzipInput);
-    	// clearText(factory.accountPage().cardNam); // i have called all these below method, but it does not clear the existing values in my Mac
-    	
-    	// sendText(factory.accountPage().editfullNameField, editAddress.get(0).get("fullName"));
+    	sendText(factory.accountPage().editfullNameField, editAddress.get(0).get("fullName"));
     	// sendText(factory.accountPage().editphoneNumInput, editAddress.get(0).get("phoneNumber"));
-    	// sendText(factory.accountPage().editstreetInput, editAddress.get(0).get("streetAddress"));
-    	// sendText(factory.accountPage().editaptNumInput, editAddress.get(0).get("apt"));
-    	// sendText(factory.accountPage().editcityInput, editAddress.get(0).get("city"));
-    	// selectByVisibleText(factory.accountPage().editstateInput, editAddress.get(0).get("state"));
+    	sendText(factory.accountPage().editstreetInput, editAddress.get(0).get("streetAddress"));
+    	sendText(factory.accountPage().editaptNumInput, editAddress.get(0).get("apt"));
+    	sendText(factory.accountPage().editcityInput, editAddress.get(0).get("city"));
+    	selectByVisibleText(factory.accountPage().editstateInput, editAddress.get(0).get("state"));
     	// sendText(factory.accountPage().editzipInput, editAddress.get(0).get("zipCode"));
     	logger.info("user updated new address");
         }
@@ -250,16 +260,14 @@ public class RetailAccountSteps extends CommonUtility {
     	click(factory.accountPage().updateAddressBut);
 		logger.info("User clicked update address Button");
     }
-    @Then("a message should be displayed ‘Address Updated Successfully")
-    public void aMessageShouldBeDisplayedAddressUpdatedSuccessfully() {
-    	// Assert.assertTrue(isElementDisplayed(factory.accountPage().editAddressMessag));
-    	waitTillPresence(factory.accountPage().editAddressMessag);
+    @Then("a message should be displayed such as {string}")
+    public void aMessageShouldBeDisplayedAddressUpdatedSuccessfully(String sMessage) {
+    	String actualMessage = sMessage;
+		String expectedMessage = "Address Updated Successfully";
+		Assert.assertEquals(actualMessage, expectedMessage);
+		// Assert.assertTrue(isElementDisplayed(factory.accountPage().editAddressMessag));
     	logger.info("an update address message displayed");
     	
-    	// String actualMessage = factory.accountPage().editAddressMessag.getText();
-    	// String expectedMessage = "Address Updated Successfully";
-    	// Assert.assertEquals(expectedMessage, actualMessage);
-    	// logger.info("user profile information updated");
     }
     
     // Remove Address Scenario: ------------------------
@@ -276,6 +284,7 @@ public class RetailAccountSteps extends CommonUtility {
     	// isElementDisplayed(factory.accountPage().removeAddressBut);
     	Assert.assertTrue(isElementDisplayed(factory.accountPage().removeAddressBut));
     	logger.info("existing address remove message displayed");
+    	
     	
     }
 

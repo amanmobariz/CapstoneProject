@@ -21,7 +21,7 @@ public class SignInSteps extends CommonUtility {
 		logger.info("user clicked on Sign in Option");
 	}
 	
-	@When("User enter email {string} and password {string}")
+	@And("User enter email {string} and password {string}")
 		public void userEnterEmailAndPassword(String emailVal, String passVal) {
 		sendText(factory.signInPage().emailField, emailVal);
 		sendText(factory.signInPage().passwordField, passVal);
@@ -63,9 +63,12 @@ public class SignInSteps extends CommonUtility {
 	   logger.info("user clicked on SignUp button");
 	}
 	
+	@Then("User should be logged into account page")
+	public void userShouldBeLoggedIntoAccountPage() {
+		Assert.assertTrue(isElementDisplayed(factory.homePage().accountOption));
+		logger.info("user is logged into account page");
+		
+	}
 	
 }
-
-
-
 

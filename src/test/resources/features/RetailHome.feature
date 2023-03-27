@@ -26,7 +26,7 @@ Feature: Retail Home Page
   Scenario: Verify User can add an item to cart
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'aisha13@gmail.com' and password 'Aman@12345'
+    And User enter email 'aisha13@gmail.com' and password 'Aman@12347'
     And User click on login button
     And User should be logged in into Account
     And User change the category to 'Smart Home'
@@ -41,7 +41,7 @@ Feature: Retail Home Page
   Scenario: Verify User can place an order with Shipping address and payment Method on file
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'aisha13@gmail.com' and password 'Aman@12345'
+    And User enter email 'aisha13@gmail.com' and password 'Aman@12347'
     And User click on login button
     And User should be logged in into Account
     And User change the category to 'Smart Home'
@@ -61,16 +61,16 @@ Feature: Retail Home Page
     And User click Add a credit card or Debit Card for Payment method
     And User fill bellow Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 9988776655443311 | Aisha Gul  |              10 |           2025 |          456 |
+      | 9988776655449922 | Tayeb Moba |              10 |           2025 |          333 |
     And User click on Add card button
     And User click on Place Your Order
-    Then a message should be displayed ‘Order Placed, Thanks’
+    Then a message should be displayed be 'Order Placed, Thanks'
 
   @placeOrder2
   Scenario: Verify User can place an order without Shipping address and payment Method on file
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'aisha13@gmail.com' and password 'Aman@12345'
+    And User enter email 'aisha13@gmail.com' and password 'Aman@12347'
     And User click on login button
     And User should be logged in into Account
     And User change the category to 'Electronics'
@@ -83,4 +83,4 @@ Feature: Retail Home Page
     And User click on Cart option
     And User click on Proceed to Checkout button
     And User click on Place Your Order
-    Then a message should be displayed ‘Order Placed, Thanks’
+    Then a message should be displayed with 'Order Placed, Thanks'

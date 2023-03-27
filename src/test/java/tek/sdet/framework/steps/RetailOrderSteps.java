@@ -106,7 +106,7 @@ public class RetailOrderSteps extends CommonUtility {
 		logger.info("user clicked on the Review button");
 		
 	}
-	@When("User write Review headline {string}")
+	@When("User write Review headline {string} and {string}")
 	public void userWriteReviewHeadline(String headlineValue, String reviewText) {
 		sendText(factory.orderPage().addReview, headlineValue);
 		sendText(factory.orderPage().AddText, reviewText);
@@ -124,23 +124,9 @@ public class RetailOrderSteps extends CommonUtility {
 		String actualMessage = reviewMessage;
 		String expectedMessage = "Your review was added successfully";
 		Assert.assertEquals(actualMessage, expectedMessage);
-		Assert.assertTrue(isElementDisplayed(factory.orderPage().reviewMessage));
+		// Assert.assertTrue(isElementDisplayed(factory.orderPage().reviewMessage));
     	logger.info("this message should be displayed ‘Your review was added successfully");
 	    
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

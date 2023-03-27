@@ -9,8 +9,8 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 @CucumberOptions(
 		tags = "@orderReview",
 		features = "classpath:features", // this is path to features folder
-		glue ="tek.sdet.framework",
-		dryRun = true,
+		glue ="tek.sdet.framework", 
+		dryRun = false,
 		plugin = { 
                 "pretty",
                 "html:target/htmlReports/cucumber-pretty.html",
@@ -22,4 +22,5 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 public class TestRunner {
 
 }
+
 

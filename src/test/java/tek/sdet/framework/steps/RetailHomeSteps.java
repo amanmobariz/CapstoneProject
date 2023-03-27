@@ -181,10 +181,13 @@ import org.openqa.selenium.WebElement;
 			logger.info("user clicked on Place Order link");
 			
 		}
-		@And("a message should be displayed ‘Order Placed, Thanks’")
-		public void aMessageShouldBeDisplayedOrderPlacedThanks() {
-			waitTillPresence(factory.homePage().orderMessage);
-	    	logger.info("a message should be displayed ‘Order Placed, Thanks’");
+		@And("a message should be displayed be {string}")
+		public void aMessageShouldBeDisplayedOrderPlacedThanks(String message) {
+			String actualMessage = message;
+	    	String expectedMessage = "Order Placed, Thanks";
+	    	Assert.assertEquals(actualMessage, expectedMessage);
+	    	Assert.assertTrue(isElementDisplayed(factory.homePage().orderMessage));
+	    	logger.info("a message should be displayed"); 
 			
 		}
 		
@@ -205,4 +208,13 @@ import org.openqa.selenium.WebElement;
 		    logger.info("cart icon quantity changed to '5'");
 		    
 		}
+		
+		@And("a message should be displayed with {string}")
+		public void aMessageShouldBeDisplayedOrderPlacedWithThanks(String message) {
+			String actualMessage = message;
+	    	String expectedMessage = "Order Placed, Thanks";
+	    	Assert.assertEquals(actualMessage, expectedMessage);
+	    	Assert.assertTrue(isElementDisplayed(factory.homePage().orderMessage));
+	    	logger.info("a message should be displayed"); 
 	}
+}

@@ -15,7 +15,7 @@ public class RetailAccountPage extends BaseSetup{
 	// @FindBy(xpath = "//a[@id='accountLink']")
 	// public WebElement accountLink;
 
-	@FindBy(xpath = "//input[@id='nameInput']")
+	@FindBy(xpath = "//input[@id='nameInput']") 
 	public WebElement nameInput;
 	
 	@FindBy(xpath = "//input[@id='personalPhoneInput']")
@@ -27,7 +27,7 @@ public class RetailAccountPage extends BaseSetup{
 	@FindBy(xpath = "//div[contains(text(),'Personal Information Updated Successfully')]")
 	public WebElement personalInfoUpdateMessage;
 	
-	// ------------------------------------------------------------------
+	// 2: Update Password ------------------------------------------------------------------
 	
 	@FindBy(xpath = "//input[@id='previousPasswordInput']")
 	public WebElement previousPass;
@@ -70,7 +70,7 @@ public class RetailAccountPage extends BaseSetup{
 	@FindBy(xpath = "//div[contains(text(),'Payment Method added sucessfully')]")
 	public WebElement paymentUpdateMessage;
 	
-	// edit card ------------------------------------------------------------------
+	// edit payment card ------------------------------------------------------------------
 	
 	@FindBy(xpath = "//p[contains(@class, 'account')]")
 	public WebElement subtitleLink;
@@ -96,7 +96,7 @@ public class RetailAccountPage extends BaseSetup{
 	@FindBy(css = "#paymentSubmitBtn")
 	public WebElement editCardButt;
 	
-	@FindBy(xpath = "//div[contains(text(),'Payment Method updated Successfully)]")
+	@FindBy(xpath = "//div[contains(text(),'Payment Method updated Successfully')]") 
 	public WebElement paymentMethodMessage;
 	
 	// remove card------------------------------------------------------------------
@@ -144,8 +144,8 @@ public class RetailAccountPage extends BaseSetup{
 	public WebElement addAddressBut; 
 	
 	
-	@FindBy(xpath = "//div[text()='Address Added Successfully']")
-	public WebElement addAddressMessag;   
+	@FindBy(xpath = "//div[contains(text(),'Address Added Successfully')]")
+	public WebElement addAddressMessag;      
 	
 	// Edit Address ---------------------------------------
 	
